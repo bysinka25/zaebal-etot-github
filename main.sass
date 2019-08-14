@@ -1,6 +1,7 @@
 $text-color-dark: #373737
 $text-color-light: #ffffff
 $active-color: #ff9d00
+$bg-color-light: #f4f4f4
 body
  font-family: 'Roboto', sans-serif
  font-family: 'Roboto Slab', serif
@@ -94,6 +95,7 @@ img
       font:
         size: 28px
         weight: 300
+      margin-bottom: 10px
     &__form
       background-color: rgba(#fff, 0.2)
       padding: 30px 27px
@@ -191,13 +193,62 @@ img
         line-height: 30px
         text-align: center
 
+.features
+  background-color: $bg-color-light
+  padding-top: 49px
+  padding-bottom: 55px
+  &-blocks
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-block
+    display: flex
+    align-items: center
+    flex-basis: 31%
+    background-color: #fff
+    padding: 28px 19px
+    margin-bottom: 30px
+    &__img
+      flex-basis: 40%
+      margin-right: 9px
+    &__title
+      font-size: 15px
+      font-weight: 700
+      margin-bottom: 5px
+    &__descr
+      font-size: 14px
+      font-weight: 400
+.numbers
+  text-align: center
+  margin-bottom: 37px
 
-.numbers-block
-  &__title
-    color: #373737
-    font-family: Roboto
-    font-size: 16px
-    font-weight: 400
+  &-block
+    display: inline-block
+    width: 33%
+    vertical-align: top
+    &__title
+      color: $active-color
+      font-weight: 900
+      font-size: 36px
+      margin-bottom: 10px
+      sup
+        font-size: 18px
+    &__text
+      font-size: 16px
+      font-weight: 400
+
+.section
+  &-title
+  color: #313131
+  font-size: 27px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  &::after
+    content: ''
+    display: block
+    background: url(../img/wavy.png) center no-repeat
+    height: 6px
 
 
  
