@@ -341,19 +341,34 @@ img {
   font-weight: 400;
 }
 
-.numbers .section {
+.section-title {
   color: #313131;
   font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 29px;
 }
 
-.numbers .section::after {
+.section-title::after {
+  margin-top: 12px;
   content: '';
   display: block;
   background: url(../img/wavy.png) center no-repeat;
   height: 6px;
+}
+
+.products {
+  padding-top: 57px;
+  padding-bottom: 73px;
+}
+
+.products-block {
+  text-align: center;
+}
+
+.products-block img {
+  height: 280px;
 }
 
 @media (max-width: 576px) {
